@@ -1,4 +1,8 @@
-#include <iostream>
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    18-06-2023     *************************\
+
+
+#include <bits/stdc++.h>
 using namespace std;
 /*  8.	Find the sum of n largest numbers from an unsorted array using bubble sort. */
 

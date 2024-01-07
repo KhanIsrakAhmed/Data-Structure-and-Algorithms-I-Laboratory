@@ -1,6 +1,9 @@
-#include <iostream>
-using namespace std;
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    18-06-2023     *************************\
 
+
+#include <bits/stdc++.h>
+using namespace std;
 /* Find a sorted partition of length k from an unsorted array of n elements  */
 
 void insertion(int a[], int n, int k)

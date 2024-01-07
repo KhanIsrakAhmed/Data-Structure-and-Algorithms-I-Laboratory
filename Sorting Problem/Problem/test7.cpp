@@ -1,6 +1,9 @@
-#include <iostream>
-using namespace std;
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    18-06-2023     *************************\
 
+
+#include <bits/stdc++.h>
+using namespace std;
 /*	Find the number of elements in the longest subset having successive */
 
 int longestSuccessiveSubset(int arr[], int n)

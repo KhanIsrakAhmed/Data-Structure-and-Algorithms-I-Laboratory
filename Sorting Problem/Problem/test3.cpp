@@ -1,4 +1,8 @@
-#include <iostream>
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    14-06-2023     *************************\
+
+
+#include <bits/stdc++.h>
 using namespace std;
 
 /* SELECTION SORT & MEIDAN*/

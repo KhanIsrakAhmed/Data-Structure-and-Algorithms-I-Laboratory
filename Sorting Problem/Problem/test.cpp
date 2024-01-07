@@ -1,4 +1,8 @@
-#include <iostream>
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    11-06-2023     *************************\
+
+
+#include <bits/stdc++.h>
 using namespace std;
 
 /** Selection sort & median*/
