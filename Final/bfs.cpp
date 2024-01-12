@@ -1,5 +1,10 @@
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    06-07-2023     *************************\
+
+
 #include <bits/stdc++.h>
 using namespace std;
+;
 #define size 4
 
 int graph[size][size] = {{0, 1, 1, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {0, 0, 1, 0}};
