@@ -1,9 +1,7 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    21-07-2023     *************************\
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
 using namespace std;
 
 void printArray(int arr[], int len)
@@ -25,12 +23,12 @@ void maxheapify(int arr[], int size, int index) //    maxheapify (arr, length - 
 
     // debug code
     {
-        cout << "Index " << index << nl;
+        cout << "Index " << index << endl;
         if (leftChild <= size)
             cout << "Left child = " << arr[leftChild] << "    ";
         if (rightChild <= size)
             cout << "Right child = " << arr[rightChild];
-        cout << nl;
+        cout << endl;
     }
 
     int largest = index; // parent
@@ -47,24 +45,24 @@ void maxheapify(int arr[], int size, int index) //    maxheapify (arr, length - 
 
     if (largest != index)
     {
-        cout << "swap  " << arr[largest] << " < - - > " << arr[index] << nl;
+        cout << "swap  " << arr[largest] << " < - - > " << arr[index] << endl;
         swap(arr[largest], arr[index]);
         printArray(arr, size + 1);
-        cout << nl;
+        cout << endl;
 
-        cout << "------ Recursion ------" << nl;
-        Total_Call_count_of_maxheapify++; 
+        cout << "------ Recursion ------" << endl;
+        Total_Call_count_of_maxheapify++;
         maxheapify(arr, size, largest);
     }
-    cout << nl;
+    cout << endl;
 }
 
 void buildMaxHeap(int arr[], int length)
 {
     for (int i = length / 2; i >= 1; i--)
     {
-        cout << "Calling maxHeapify  index = " << i << "   value = " << arr[i] << nl;
-        cout << "``````````````````````````````````````````" << nl;
+        cout << "Calling maxHeapify  index = " << i << "   value = " << arr[i] << endl;
+        cout << "``````````````````````````````````````````" << endl;
         Total_Call_count_of_maxheapify++;
         maxheapify(arr, length - 1, i);
     }
@@ -84,22 +82,22 @@ int32_t main()
 
     int length = sizeof(arr) / sizeof(arr[0]);
 
-    cout << nl;
+    cout << endl;
     cout << "Given Array : ";
     printArray(arr, length);
 
-    cout << "Length " << length << nl;
-    cout << nl;
-    cout << "---------- Calling build Max Heap Function --------" << nl;
+    cout << "Length " << length << endl;
+    cout << endl;
+    cout << "---------- Calling build Max Heap Function --------" << endl;
     buildMaxHeap(arr, length);
-    cout << nl;
+    cout << endl;
 
-    cout << "Final Print " << nl;
+    cout << "Final Print " << endl;
     printArray(arr, length);
-    cout << nl;
+    cout << endl;
 
-    cout << "Total_Call_count_of_maxheapify  " << Total_Call_count_of_maxheapify << nl;
-    cout << nl;
+    cout << "Total_Call_count_of_maxheapify  " << Total_Call_count_of_maxheapify << endl;
+    cout << endl;
 
-    CRACKED;
+    return 0;
 }

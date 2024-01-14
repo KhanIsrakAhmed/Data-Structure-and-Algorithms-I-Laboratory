@@ -1,10 +1,7 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    21-07-2023     *************************\
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl // NewLine
-#define null NULL
 using namespace std;
 
 class node
@@ -33,37 +30,37 @@ node *buildTree(node *root)
         return NULL;
     }
 
-    cout << "Enter  left child of " << data << " " << nl;
+    cout << "Enter  left child of " << data << " " << endl;
     root->leftNode = buildTree(root->leftNode);
 
-    cout << "Enter  right child of " << data << " " << nl;
+    cout << "Enter  right child of " << data << " " << endl;
     root->rightNode = buildTree(root->rightNode);
 
     return root;
 }
- 
+
 void levelOrderTraversal(node *root)
 {
     queue<node *> q;
     q.push(root);
-    q.push(null);
+    q.push(NULL);
 
     while (!q.empty())
     {
         node *temp = q.front();
         q.pop();
 
-        if (temp == null)
+        if (temp == NULL)
         {
-            cout << nl;
+            cout << endl;
             /*
-                 when temp becomes null,
+                 when temp becomes NULL,
                  at that moment last level parents childs are already
-                 entered in the queue thst is why here adding new null object
+                 entered in the queue thst is why here adding new NULL object
             */
             if (!q.empty())
             {
-                q.push(null);
+                q.push(NULL);
             }
         }
         else
@@ -92,8 +89,9 @@ int32_t main()
     // 1 2 4 -1 -1 5 -1 -1 3 -1 6 -1 -1
 
     // level order traversal
-    cout << nl << "Tree Visualization level Order Traversal " << nl;
+    cout << endl
+         << "Tree Visualization level Order Traversal " << endl;
     levelOrderTraversal(root);
 
-    CRACKED;
+    return 0;
 }
