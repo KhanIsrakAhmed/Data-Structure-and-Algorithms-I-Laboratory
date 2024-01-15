@@ -1,10 +1,7 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    18-08-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    24-07-2023     *************************\
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl // NewLine
-#define null NULL
 using namespace std;
 
 class node
@@ -33,10 +30,10 @@ node *buildTree(node *root)
         return NULL;
     }
 
-    cout << "Enter  left child of " << data << " " << nl;
+    cout << "Enter  left child of " << data << " " << endl;
     root->leftNode = buildTree(root->leftNode);
 
-    cout << "Enter  right child of " << data << " " << nl;
+    cout << "Enter  right child of " << data << " " << endl;
     root->rightNode = buildTree(root->rightNode);
 
     return root;
@@ -44,7 +41,7 @@ node *buildTree(node *root)
 
 void preOrderTraversal(node *root)
 {
-    if (root == null)
+    if (root == NULL)
         return;
     cout << root->data << " ";
     preOrderTraversal(root->leftNode);
@@ -57,7 +54,7 @@ void preOrderTraversal(node *root)
 
 void InOrderTraversal(node *root)
 {
-    if (root->leftNode)                     // if leftNode != null --> (LPR call)
+    if (root->leftNode)                     // if leftNode != NULL --> (LPR call)
     {
         InOrderTraversal(root->leftNode);
     }
@@ -87,9 +84,10 @@ int32_t main()
 
     // level order traversal
 
-    cout << nl << "Pre-Order Traversal : ";
+    cout << endl
+         << "Pre-Order Traversal : ";
     preOrderTraversal(root);
-    cout << nl;
+    cout << endl;
 
-    CRACKED;
+    return 0;
 }
