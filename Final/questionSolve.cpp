@@ -1,8 +1,7 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    24-07-2023     *************************\
 
-#include <iostream>
-#define nl endl;
+#include <bits/stdc++.h>
 using namespace std;
 
 struct SStackk
@@ -25,7 +24,7 @@ char pop()
 {
     if (top == NULL)
     {
-        cout << "Stack is underFlow" << nl;
+        cout << "Stack is underFlow" << endl;
         return -1;
     }
     else
@@ -84,9 +83,8 @@ bool palindromeCheck(string s2)
     int len = s.size();
     if (len == cnt)
     {
-        // cout << "correct len " << nl;
+        // cout << "correct len " << endl;
     }
-
 
     for (int i = 0; i < len; i++)
     {
@@ -128,8 +126,8 @@ void valid_parentheses(string s)
 {
     if (!palindromeCheck(s))
     {
-        cout << "Invalid " << nl;
-        cout << "From Palindrom " << nl;
+        cout << "Invalid " << endl;
+        cout << "From Palindrom " << endl;
         return;
     }
 
@@ -150,7 +148,7 @@ void valid_parentheses(string s)
             if (!flag || findOparator)
             {
                 push(s[i]);
-                // cout << "Check 1 " << nl;
+                // cout << "Check 1 " << endl;
                 break;
             }
             continue;
@@ -160,7 +158,7 @@ void valid_parentheses(string s)
             if (!flag || findOparator)
             {
                 push(s[i]);
-                // cout << "Check 2 " << nl;
+                // cout << "Check 2 " << endl;
                 break;
             }
             continue;
@@ -170,7 +168,7 @@ void valid_parentheses(string s)
             if (!flag || findOparator)
             {
                 push(s[i]);
-                // cout << "Check 3 " << nl;
+                // cout << "Check 3 " << endl;
                 break;
             }
 
@@ -189,7 +187,7 @@ void valid_parentheses(string s)
         else
         {
             push(s[i]);
-            // cout << "Check 5 " << nl;
+            // cout << "Check 5 " << endl;
             break;
         }
     }
@@ -197,11 +195,11 @@ void valid_parentheses(string s)
 
     if (isEmpty())
     {
-        cout << "Valid  " << nl;
+        cout << "Valid  " << endl;
     }
     else
     {
-        cout << "Invalid  " << nl;
+        cout << "Invalid  " << endl;
     }
 }
 
