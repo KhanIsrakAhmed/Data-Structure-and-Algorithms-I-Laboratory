@@ -1,10 +1,7 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    18-08-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    24-07-2023     *************************\
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
-#define null NULL
 using namespace std;
 
 typedef struct Node
@@ -18,21 +15,21 @@ node *insert(node *&root, int key)
 {
     node *newNode = (struct Node *)malloc(sizeof(struct Node));
     newNode->data = key;
-    newNode->leftNode = null;
-    newNode->rightNode = null;
+    newNode->leftNode = NULL;
+    newNode->rightNode = NULL;
 
     node *traveller = root;
-    if (traveller == null)
+    if (traveller == NULL)
     {
         return newNode;
     }
-    cout << "ROOT " << root->data << nl;
+    cout << "ROOT " << root->data << endl;
     while (true)
     {
-        if (traveller == null)
+        if (traveller == NULL)
         {
             traveller = newNode;
-            cout << "Tashin" << nl;
+            cout << "Tashin" << endl;
             break;
         }
         else
@@ -53,7 +50,7 @@ node *insert(node *&root, int key)
 
 void postOrderTraversal(node *root)
 {
-    if (root == null)
+    if (root == NULL)
         return;
     postOrderTraversal(root->leftNode);
     postOrderTraversal(root->rightNode);
@@ -78,10 +75,10 @@ int32_t main()
         root = insert(root, data);
     }
 
-    cout << nl;
+    cout << endl;
     cout << "Tree Traversal: ";
     postOrderTraversal(root);
-    cout << nl;
+    cout << endl;
 
-    CRACKED;
+    return 0;
 }
