@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
-using namespace std;
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    24-07-2023     *************************\
 
+#include <bits/stdc++.h>
+using namespace std;
 #define MAX_SIZE 100
 
 typedef struct Queuee
@@ -12,7 +12,7 @@ typedef struct Queuee
     int rear;
 } Queue;
 
-void initializeQueue(Queue *q) 
+void initializeQueue(Queue *q)
 {
     q->front = -1;
     q->rear = -1;
