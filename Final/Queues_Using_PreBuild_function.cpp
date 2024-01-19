@@ -1,45 +1,45 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    01-08-2023     *************************\
+
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
 using namespace std;
 
-int32_t main()
+int main()
 {
       queue<int> que;
       que.push(10);
       que.push(100);
       que.push(1000);
 
-      cout << "Queue Front " << que.front() << nl;
-      cout << "Queue size  " << que.size() << nl;
-      cout << nl;
+      cout << "Queue Front " << que.front() << endl;
+      cout << "Queue size  " << que.size() << endl;
+      cout << endl;
 
       if (que.empty())
       {
-            cout << "This queue is empty" << nl;
+            cout << "This queue is empty" << endl;
       }
       else
       {
-            cout << "This queue is not empty" << nl;
+            cout << "This queue is not empty" << endl;
       }
 
       que.pop();
-      cout << "Queue size  " << que.size() << nl;
-      cout << "Queue Front " << que.front() << nl;
-      cout << nl;
+      cout << "Queue size  " << que.size() << endl;
+      cout << "Queue Front " << que.front() << endl;
+      cout << endl;
 
       que.pop();
       que.pop();
-      cout << "Queue size  " << que.size() << nl;
-      cout << "Queue Front " << que.front() << nl;
+      cout << "Queue size  " << que.size() << endl;
+      cout << "Queue Front " << que.front() << endl;
       if (que.empty())
       {
-            cout << "This queue is empty" << nl;
+            cout << "This queue is empty" << endl;
       }
-      cout << nl;
+      cout << endl;
 
-      CRACKED;
+      return 0;
+      ;
 }
