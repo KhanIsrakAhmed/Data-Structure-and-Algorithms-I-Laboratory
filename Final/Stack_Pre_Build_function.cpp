@@ -1,10 +1,8 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    08-08-2023     *************************\
+
 
 #include <bits/stdc++.h>
-
-#define CRACKED return 0;
-#define nl endl; // NewLine
 using namespace std;
 
 int32_t main()
@@ -16,9 +14,9 @@ int32_t main()
     s.pop();
     s.push(1000);
 
-    cout << s.empty() << nl;
-    cout << s.top() << nl;
-    cout << s.size() << nl;
+    cout << s.empty() << endl;
+    cout << s.top() << endl;
+    cout << s.size() << endl;
 
-    CRACKED;
+    return 0;
 }

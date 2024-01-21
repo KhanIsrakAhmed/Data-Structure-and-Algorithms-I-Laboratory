@@ -1,9 +1,8 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    08-08-2023     *************************\
+
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl // NewLine
 using namespace std;
 
 class Stack
@@ -29,7 +28,7 @@ public:
         }
         else
         {
-            cout << "This stack us Overflow" << nl;
+            cout << "This stack us Overflow" << endl;
         }
     }
     void pop()
@@ -40,14 +39,14 @@ public:
         }
         else
         {
-            cout << "This Stack is UnderFlow" << nl;
+            cout << "This Stack is UnderFlow" << endl;
         }
     }
     int peek()
     {
         if (top < 0)
         {
-            cout << "This stack is empty" << nl;
+            cout << "This stack is empty" << endl;
             return -1;
         }
         return arr[top];
@@ -71,11 +70,12 @@ int main()
     s.push(12);
     s.push(24);
 
-    cout << s.peek() << nl;
+    cout << s.peek() << endl;
     s.pop();
-    cout << s.peek() << nl;
-    cout << s.empty() << nl;
-    s.empty() == 0 ? cout << "False" << nl : cout << "True" << nl;
+    cout << s.peek() << endl;
+    cout << s.empty() << endl;
+    s.empty() == 0 ? cout << "False" << endl : cout << "True" << endl;
 
-    CRACKED;
+    return 0;
+    ;
 }

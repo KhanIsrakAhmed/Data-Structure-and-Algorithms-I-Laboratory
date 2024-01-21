@@ -1,9 +1,8 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    08-08-2023     *************************\
+
 
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
 using namespace std;
 
 struct node
@@ -31,14 +30,14 @@ void push(int data)
         ptr->next = head;
         head = ptr;
     }
-    cout << " DATA pushed " << nl;
+    cout << " DATA pushed " << endl;
 }
 
 void pop()
 {
     int item;
     struct node *ptr;
-    if (head == NULL) 
+    if (head == NULL)
     {
         printf("Underflow");
     }
@@ -77,8 +76,9 @@ int main()
     int choice;
     while (choice != 4)
     {
-        cout << "\n1.Push \n2.Pop \n3.Show \n4.Exit" << nl;
-        cout << "Enter your choice \n"  << nl;
+        cout << "\n1.Push \n2.Pop \n3.Show \n4.Exit" << endl;
+        cout << "Enter your choice \n"
+             << endl;
 
         cin >> choice;
         switch (choice)
