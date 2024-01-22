@@ -1,6 +1,8 @@
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    08-08-2023     *************************\
+
+
 #include <bits/stdc++.h>
-#define CRACKED return 0;
-#define nl endl; // NewLine
 using namespace std;
 
 int stackk[100]; // LIFO
@@ -10,7 +12,7 @@ void push(int value)
 {
     if (top >= 99)
     {
-        cout << "STACK over flow" << nl;
+        cout << "STACK over flow" << endl;
     }
     else
     {
@@ -24,7 +26,7 @@ int pop()
     int value;
     if (top < 0)
     {
-        cout << "Stack under flow" << nl;
+        cout << "Stack under flow" << endl;
         return -1;
     }
     else

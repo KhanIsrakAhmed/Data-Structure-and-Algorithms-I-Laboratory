@@ -1,65 +1,65 @@
-//        ****************  Author :  Tashin.Parvez  *************************\
-//        ****************  Updated:    22-06-23     *************************\
+//        ****************  Author :  Khan Israk Ahmed  *************************\
+//        ****************  Date:    21-08-2023     *************************\
 
-#include <iostream>
-#define nl endl; // NewLine
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int n = 100, front = -1, rear = -1;
 #define size 100
 int queue[size];
+int front = -1, rear = -1;
 
 void enqueue()
 {
-    int val;
-    if (rear == n - 1)
+    if (rear == size - 1)
         cout << "Queue Overflow" << endl;
     else
     {
+        int val;
         if (front == -1)
             front = 0;
-        cout << "Insert the element in queue : " << endl;
+        cout << "Insert the element in queue: ";
         cin >> val;
         rear++;
         queue[rear] = val;
     }
 }
+
 void dequeue()
 {
     if (front == -1 || front > rear)
-    {
-        cout << "Queue Underflow";
-        return;
-    }
+        cout << "Queue Underflow" << endl;
     else
     {
-        cout << "Element deleted from queue is : " << queue[front] << endl;
+        cout << "Element deleted from queue is: " << queue[front] << endl;
         front++;
     }
 }
-void Display()
+
+void display()
 {
     if (front == -1)
         cout << "Queue is empty" << endl;
     else
     {
-        cout << "Queue elements are : ";
+        cout << "Queue elements are: ";
         for (int i = front; i <= rear; i++)
             cout << queue[i] << " ";
         cout << endl;
     }
 }
+
 int main()
 {
     int ch;
     cout << "1) Insert element to queue" << endl;
     cout << "2) Delete element from queue" << endl;
-    cout << "3) Display all the elements of queue" << endl;
+    cout << "3) Display all elements of queue" << endl;
     cout << "4) Exit" << endl;
 
     while (ch != 4)
     {
-        cout << "Enter your choice : " << endl;
+        cout << "Enter your choice: ";
         cin >> ch;
 
         switch (ch)
@@ -71,7 +71,7 @@ int main()
             dequeue();
             break;
         case 3:
-            Display();
+            display();
             break;
         case 4:
             cout << "Exit" << endl;
@@ -80,5 +80,6 @@ int main()
             cout << "Invalid choice" << endl;
         }
     }
+
     return 0;
 }
